@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="TITLE"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:id="@+id/address1"
+        android:layout_width="fill_parent"        
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/title">
+
+         <View
+            android:id="@+id/viewtop"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"></View>
+            
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+             android:layout_below="@+id/viewtop"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_below="@+id/viewtop"
+			android:text="Address123" />
+        
+          <View
+            android:id="@+id/detailaddview"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/detailadd" ></View>
+    </RelativeLayout>
+   
+    <Button 
+        android:id="@+id/gotMAP"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Get Direcetions"
+        android:layout_below="@+id/address1" 
+        android:layout_height="wrap_content"
+        />
+     <RelativeLayout
+        android:id="@+id/dist"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gotMAP" >
+
+         <View
+            android:id="@+id/detailaccviewtop"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"></View>
+         
+        <TextView
+            android:id="@+id/distnace"
+             android:layout_below="@+id/detailaccviewtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detaildist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_below="@+id/detailaccviewtop"
+            android:layout_alignParentRight="true"
+			android:text="1111111" />
+        
+          <View
+            android:id="@+id/detaildistview"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/distnace" ></View>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/accesss"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dist" >
+         
+        <TextView
+            android:id="@+id/acess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acess"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailaccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+			android:text="Access" />
+        
+          <View
+            android:id="@+id/detailaccview"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/acess" ></View>
+    </RelativeLayout>
+    
+     
+     
+     
+      <RelativeLayout
+        android:id="@+id/lobbyHrs"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accesss" >
+         
+        <TextView
+            android:id="@+id/lobbyHrsTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lobby Hours"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lobbyHr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+			android:text="Access" />
+        
+          <View
+            android:id="@+id/lobyaccview"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/lobbyHr" ></View>
+    </RelativeLayout>
+     
+</RelativeLayout>
